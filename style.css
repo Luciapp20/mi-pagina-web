@@ -1,0 +1,13 @@
+h1{
+    color:rgb(57, 12, 219);
+}
+body {
+    background-image: url('img/fondo.jpeg');
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+.rotada {
+    transform: rotate(-90deg);
+  }
+
