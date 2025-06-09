@@ -30,9 +30,11 @@ body {
     line-height: var(--interlineado-base);
     color: var(--color-texto-base);
     background-color: var(--color-fondo-pagina); /* Fallback si la imagen no carga */
+    /*
     background-image: url('img/fondo.jpeg');
-    background-size: auto; /* O 'cover' si quieres que cubra todo y no se repita tanto */
-    background-repeat: repeat; /* O 'no-repeat' si usas 'cover' */
+    background-size: auto;  O 'cover' si quieres que cubra todo y no se repita tanto 
+    background-repeat: repeat;  O 'no-repeat' si usas 'cover' 
+    */
     /* background-attachment: fixed; */ /* Opcional si usas 'cover' para efecto parallax */
     /* background-position: center; */   /* Opcional si usas 'cover' */
     margin: 0;
