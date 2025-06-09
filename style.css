@@ -183,6 +183,21 @@ iframe {
     border: 1px solid var(--color-borde-iframe);
     border-radius: 4px;
 }
+/* 1. Estilos para iframes de PREVISUALIZACIÓN DE IMÁGENES de Google Drive */
+/* Asumimos que los titles de estos iframes contienen "(Preview)" o "Imagen" */
+/* y NO contienen "PDF" */
+iframe[src*="drive.google.com/file"][src*="/preview"]:not([title*="PDF"]) {
+    min-height: auto; /* Anulamos la altura mínima grande */
+    height: 350px;    /* Una altura por defecto, ajústala a tu gusto */
+                      /* O podrías usar 'auto' si el contenido lo permite, pero puede ser inconsistente */
+    width: auto;      /* Que se ajuste al contenido, hasta el max-width del iframe general */
+    max-width: 600px; /* Un ancho máximo para las imágenes preview, ajústalo */
+    /* Si quieres un aspect-ratio (ej. para imágenes mayormente horizontales): */
+    /* aspect-ratio: 16 / 9; */
+    /* O para imágenes más cuadradas/verticales: */
+    /* aspect-ratio: 4 / 3; */
+    /* Si usas aspect-ratio, la 'height' se podría ignorar o ajustar */
+}
 
 /* Específico para iframes de previsualización de PDF de Google Drive */
 iframe[src*="drive.google.com/file"][src*="/preview"] {
@@ -230,6 +245,12 @@ iframe[src*="drive.google.com/file"][src*="/preview"] {
     .test-gallery {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+    
+    /* IFRAMES en tablets */
+    iframe[src*="drive.google.com/file"][src*="/preview"]:not([title*="PDF"]) { /* Imágenes Preview */
+        height: 400px; /* Un poco más grandes en tablet */
+        /* max-width: 700px; */
+    }
 
     iframe[src*="drive.google.com/file"][src*="/preview"] {
         min-height: 500px;
@@ -258,7 +279,13 @@ iframe[src*="drive.google.com/file"][src*="/preview"] {
         /* grid-template-columns: repeat(3, 1fr); */
     }
 
-    iframe[src*="drive.google.com/file"][src*="/preview"] {
+   /* IFRAMES en escritorio */
+    iframe[src*="drive.google.com/file"][src*="/preview"]:not([title*="PDF"]) { /* Imágenes Preview */
+        height: 450px; /* Un poco más grandes en escritorio */
+        /* max-width: 800px; */
+    }
+
+    iframe[src*="drive.google.com/file"][src*="/preview"][title*="PDF"] { /* PDFs */
         min-height: 600px;
         height: 80vh;
     }
