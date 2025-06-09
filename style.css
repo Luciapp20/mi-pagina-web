@@ -1,13 +1,265 @@
-h1{
-    color:rgb(57, 12, 219);
+/* ==========================================================================
+   Variables CSS (Custom Properties)
+   ========================================================================== */
+:root {
+    --color-titulo-principal: rgb(57, 12, 219);
+    --color-borde-iframe: #ccc;
+    --color-texto-base: #333;
+    --color-enlaces: #007bff;
+    --color-enlaces-hover: #0056b3;
+    --color-fondo-pagina: #fff; /* Si no usas imagen de fondo o como fallback */
+
+    --fuente-principal: Arial, sans-serif;
+    --tamano-fuente-base: 16px;
+    --interlineado-base: 1.6;
+
+    --espaciado-seccion: 2rem; /* 32px si la base es 16px */
+    --espaciado-elemento: 1rem; /* 16px */
 }
+
+/* ==========================================================================
+   Estilos Base y Reseteo Sencillo
+   ========================================================================== */
+html {
+    font-size: var(--tamano-fuente-base);
+    scroll-behavior: smooth; /* Para que los enlaces ancla (#) se desplacen suavemente */
+}
+
 body {
+    font-family: var(--fuente-principal);
+    line-height: var(--interlineado-base);
+    color: var(--color-texto-base);
+    background-color: var(--color-fondo-pagina); /* Fallback si la imagen no carga */
     background-image: url('img/fondo.jpeg');
-    background-size: auto;
-    background-repeat: repeat;
+    background-size: auto; /* O 'cover' si quieres que cubra todo y no se repita tanto */
+    background-repeat: repeat; /* O 'no-repeat' si usas 'cover' */
+    /* background-attachment: fixed; */ /* Opcional si usas 'cover' para efecto parallax */
+    /* background-position: center; */   /* Opcional si usas 'cover' */
+    margin: 0;
+    padding: var(--espaciado-elemento);
+}
+
+/* ==========================================================================
+   Tipografía
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+    line-height: 1.2;
+}
+
+h1 {
+    color: var(--color-titulo-principal);
+    font-size: 2.5rem; /* 40px */
+    text-align: center; /* Asumiendo que el título principal va centrado */
+}
+
+h2 {
+    font-size: 2rem; /* 32px */
+    border-bottom: 2px solid var(--color-titulo-principal);
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    font-size: 1.75rem; /* 28px */
+}
+
+h4 {
+    font-size: 1.5rem; /* 24px */
+}
+
+p {
+    margin-bottom: var(--espaciado-elemento);
+}
+
+a {
+    color: var(--color-enlaces);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: var(--color-enlaces-hover);
+    text-decoration: underline;
+}
+
+ol, ul {
+    padding-left: 25px;
+    margin-bottom: var(--espaciado-elemento);
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--color-borde-iframe); /* Reutilizando color */
+    margin: var(--espaciado-seccion) 0;
+}
+
+/* ==========================================================================
+   Header y Footer
+   ========================================================================== */
+header {
+    text-align: center; /* Centra el contenido del header, incluyendo la imagen si es inline-block o block con margin auto */
+    margin-bottom: var(--espaciado-seccion);
+    padding-bottom: var(--espaciado-elemento);
+    border-bottom: 1px solid #eee;
+}
+
+header #subtitulo { /* Corregido para que aplique al h4 y no h2 */
+    color: #555;
+    font-weight: normal;
+    font-size: 1.25rem;
+    margin-top: -0.5em; /* Ajuste para acercar al título principal */
+}
+
+/* La imagen del header heredará los estilos de 'img' general.
+   Si necesitas algo específico para ELLA SOLA, usa:
+header > img {
+    max-width: 250px;
+    margin-top: var(--espaciado-elemento);
+}
+*/
+
+footer {
+    text-align: center;
+    margin-top: var(--espaciado-seccion);
+    padding-top: var(--espaciado-elemento);
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+/* ==========================================================================
+   Imágenes
+   ========================================================================== */
+img {
+    max-width: 100%;    /* Asegura que la imagen no sea más ancha que su contenedor */
+    height: auto;       /* Mantiene la proporción de la imagen */
+    display: block;     /* Elimina espacio extra debajo y permite margin auto para centrar */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--espaciado-elemento);
+    margin-bottom: var(--espaciado-elemento);
+    border-radius: 4px; /* Un toque sutil */
 }
 
 .rotada {
     transform: rotate(-90deg);
-  }
+    /* No necesita max-width, height, display, margin-left, margin-right
+       porque ya los hereda de la regla 'img' general.
+       Si necesitas un tamaño DIFERENTE para la rotada específicamente,
+       entonces sí pondrías aquí un max-width diferente. */
+    /* Ejemplo: si la quieres más pequeña después de rotar: */
+    /* max-width: 70%; */
+}
 
+/* Galería de imágenes para "Tests de seguimiento" (si la usas) */
+.test-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas adaptables */
+    gap: var(--espaciado-elemento);
+    margin-top: var(--espaciado-elemento);
+}
+
+.test-gallery img {
+    width: 100%; /* Para que la imagen ocupe su celda en la cuadrícula */
+    margin: 0;   /* Quitar márgenes si están dentro de la galería */
+}
+
+/* ==========================================================================
+   IFrames (General, PDFs, Videos)
+   ========================================================================== */
+iframe {
+    max-width: 100%;
+    display: block; /* Para permitir márgenes y quitar espacio extra */
+    margin: var(--espaciado-elemento) auto; /* Centrar y espaciar */
+    border: 1px solid var(--color-borde-iframe);
+    border-radius: 4px;
+}
+
+/* Específico para iframes de previsualización de PDF de Google Drive */
+iframe[src*="drive.google.com/file"][src*="/preview"] {
+    min-height: 450px; /* Altura mínima para que sea usable */
+    height: 70vh;      /* Ocupa el 70% de la altura de la ventana visible */
+    width: 100%;       /* Ocupa todo el ancho disponible */
+}
+
+/* Contenedor para videos responsivos (mantener proporción) */
+.video-responsive-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 (9 / 16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: var(--espaciado-elemento);
+    margin-bottom: var(--espaciado-elemento);
+    border-radius: 4px; /* Aplicar al contenedor para que el iframe herede la forma */
+}
+
+.video-responsive-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* El contenedor ya tiene el borde si es necesario */
+}
+
+/* ==========================================================================
+   Media Queries (Adaptabilidad)
+   ========================================================================== */
+
+/* Estilos para tablets y pantallas medianas */
+@media (min-width: 768px) {
+    body {
+        padding: var(--espaciado-seccion);
+    }
+
+    h1 {
+        font-size: 3rem; /* 48px */
+    }
+
+    /* Si quieres que la galería de tests tenga más columnas en tablet: */
+    .test-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    iframe[src*="drive.google.com/file"][src*="/preview"] {
+        min-height: 500px;
+        height: 75vh;
+    }
+}
+
+/* Estilos para ordenadores de escritorio */
+@media (min-width: 992px) {
+    body {
+        max-width: 960px; /* O 1140px, según prefieras */
+        margin-left: auto;
+        margin-right: auto;
+        padding: var(--espaciado-seccion) calc(var(--espaciado-seccion) * 1.5); /* Más padding lateral */
+        box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Sombra sutil para el contenedor principal */
+        border-radius: 8px; /* Bordes redondeados para el cuerpo en escritorio */
+    }
+
+    h1 {
+        font-size: 3.5rem; /* 56px */
+    }
+
+    /* Si quieres que la galería de tests tenga aún más columnas en escritorio: */
+    .test-gallery {
+         /* Ya está bien con auto-fit, pero podrías forzar 3 columnas si quisieras: */
+        /* grid-template-columns: repeat(3, 1fr); */
+    }
+
+    iframe[src*="drive.google.com/file"][src*="/preview"] {
+        min-height: 600px;
+        height: 80vh;
+    }
+}

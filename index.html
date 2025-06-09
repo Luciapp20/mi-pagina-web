@@ -1,260 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio RIN</title>
+    <title>Portafolio RIN - Lucía Pardo Pérez</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header>
         <h1 id="título">Portafolio Redes Industriales</h1>
-        <h4 id="subtítulo">Lucía Pardo Pérez</h2>
-        <img src="img/redes.jpeg">
+        <h4 id="subtitulo">Lucía Pardo Pérez</h4>
+        <img src="img/redes.jpeg" alt="Banner ilustrativo de redes industriales">
     </header>
-    <hr style="clear:both">
-    <p>Proyecto creado con un fin de aprendizaje para la asignatura.</p>
-    <section>
-        <h2>Índice</h2>
-    
-        <ol>
-            <li><a href="Portfolio">Portfolio Teoria</a></li>
-            <li><a href="#tests">Tests de seguimiento</a></li>
-            <li><a href="#esp32">Prácticas ESP32</a>
-                <ul>
-                <li><a href="#blink">Blink</a></li>
-                <li><a href="#ble">Transmisión de datos BLE</a></li>
-                <li><a href="#bleled">BLE_LED</a></li>
-                <li><a href="#bleledamp">BLE ampliación</a></li>
-                <li><a href="#apstation">Modo Ap + Station</a></li>
 
-                </ul>
-            </li>
-            <li><a href="#esp32comunicacion">Prácticas comunicaciones entre ESP32</a>
-                <ul>
-                <li><a href="#esp32UART">Comunicación UART entre Placas ESP32-S3</a></li>
-                <li><a href="#esp32RS485">Comunicación ESP32-S3 mediante RS485 con Control Automático (HW-519P4)</a></li>
-                <li><a href="#esp32CAN">Comunicación ESP32-S3 mediante CAN</a></li>
+    <hr> <!-- Eliminado style="clear:both" -->
 
-                </ul>
-            </li>
-            <li><a href="#coche">Proyecto final de la asignatura</a></li>
-        </ol>
+    <main> <!-- Envolver el contenido principal en <main> -->
+        <p>Proyecto creado con un fin de aprendizaje para la asignatura de Redes Industriales.</p>
 
-        <h2 id="Portfolio">Portfolio Teoria</h2>
-        <p>A continuación se encuentra el portfolio de la teoría vista en la asignatura.</p>
-        <iframe src="https://drive.google.com/file/d/1_vyuSSnjnCPW0OTvapEl4sVsGgL_FqQV/preview" target="_blank"></iframe>
-        <a href="https://drive.google.com/file/d/1_vyuSSnjnCPW0OTvapEl4sVsGgL_FqQV/preview" target="_blank">Haz clic aquí para ver o descargar el PDF</a>
+        <nav aria-labelledby="indice-titulo"> <!-- <nav> para el índice -->
+            <h2 id="indice-titulo">Índice</h2>
+            <ol>
+                <li><a href="#Portfolio">Portfolio Teoría</a></li>
+                <li><a href="#tests">Tests de seguimiento</a></li>
+                <li><a href="#esp32">Prácticas ESP32</a>
+                    <ul>
+                        <li><a href="#blink">Blink</a></li>
+                        <li><a href="#ble">Transmisión de datos BLE</a></li>
+                        <li><a href="#bleled">BLE_LED</a></li>
+                        <li><a href="#bleledamp">BLE ampliación</a></li>
+                        <li><a href="#apstation">Modo Ap + Station</a></li>
+                    </ul>
+                </li>
+                <li><a href="#esp32comunicacion">Prácticas comunicaciones entre ESP32</a>
+                    <ul>
+                        <li><a href="#esp32UART">Comunicación UART entre Placas ESP32-S3</a></li>
+                        <li><a href="#esp32RS485">Comunicación ESP32-S3 mediante RS485</a></li>
+                        <li><a href="#esp32CAN">Comunicación ESP32-S3 mediante CAN</a></li>
+                    </ul>
+                </li>
+                <li><a href="#coche">Proyecto final de la asignatura</a></li>
+            </ol>
+        </nav>
 
-        <br>
-        <hr style="clear:both">
+        <section id="Portfolio">
+            <h2>Portfolio Teoría</h2>
+            <p>A continuación se encuentra el portfolio de la teoría vista en la asignatura.</p>
+            <iframe src="https://drive.google.com/file/d/1_vyuSSnjnCPW0OTvapEl4sVsGgL_FqQV/preview" title="Portfolio de Teoría PDF"></iframe>
+            <p><a href="https://drive.google.com/file/d/1_vyuSSnjnCPW0OTvapEl4sVsGgL_FqQV/preview" target="_blank" rel="noopener noreferrer">Ver o descargar PDF: Portfolio Teoría</a></p>
+        </section>
 
-        <h2 id="tests">Tests de seguimiento</h2>
-        
-        <p>A continuación se encuentran los test de seguimiento de la asignatura:</p>
-        <img src="img/img1.jpg" width="400">
-        <img src="img/img2.jpg" width="400">
-        <img src="img/img3.jpg" width="400">
-        <img src="img/img4.jpg" width="400">
-        <img src="img/img5.jpg" width="400">
-        <img src="img/img6.jpg" width="400">
-        <img src="img/img7.jpg" width="600" class="rotada">
-
-        <img src="img/img8.jpg" width="400">
-        <img src="img/img9.jpg" width="400">
-        <img src="img/img10.jpg" width="400">
-        <img src="img/img11.jpg" width="400">
-        <img src="img/img12.jpg" width="400">
-        <img src="img/img13.jpg" width="400">
-
-        <hr style="clear:both">
-
-        <h2 id="esp32">Prácticas del ESP32</h2>
-
-        <h3 id="blink">Blink</h3>
-        <h4>Mi Documento PDF</h4>
-        <a href="https://drive.google.com/file/d/1xWUjMKXwuxY41DxBX3tdZw0I_5iLhCwH/preview" target="_blank">Haz clic aquí para ver o descargar el PDF</a>
-        
-        <br>
-        <iframe src="https://drive.google.com/file/d/1xWUjMKXwuxY41DxBX3tdZw0I_5iLhCwH/preview" target="_blank"></iframe>
-        <br>
         <hr>
-        <iframe src="https://drive.google.com/file/d/1MXyKxkF-lheDaUGrqHZFdjWQ4EQJC8hU/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Video de funcionamiento</p>
 
-        <hr style="clear:both">
+        <section id="tests">
+            <h2>Tests de seguimiento</h2>
+            <p>A continuación se encuentran los test de seguimiento de la asignatura:</p>
+            <div class="test-gallery">
+                <img src="img/img1.jpg" alt="Test de seguimiento - Imagen 1">
+                <img src="img/img2.jpg" alt="Test de seguimiento - Imagen 2">
+                <img src="img/img3.jpg" alt="Test de seguimiento - Imagen 3">
+                <img src="img/img4.jpg" alt="Test de seguimiento - Imagen 4">
+                <img src="img/img5.jpg" alt="Test de seguimiento - Imagen 5">
+                <img src="img/img6.jpg" alt="Test de seguimiento - Imagen 6">
+                <img src="img/img7.jpg" class="rotada" alt="Test de seguimiento - Imagen 7 rotada">
+                <img src="img/img8.jpg" alt="Test de seguimiento - Imagen 8">
+                <img src="img/img9.jpg" alt="Test de seguimiento - Imagen 9">
+                <img src="img/img10.jpg" alt="Test de seguimiento - Imagen 10">
+                <img src="img/img11.jpg" alt="Test de seguimiento - Imagen 11">
+                <img src="img/img12.jpg" alt="Test de seguimiento - Imagen 12">
+                <img src="img/img13.jpg" alt="Test de seguimiento - Imagen 13">
+            </div>
+        </section>
 
-        <h3 id="ble">Transmisión de datos BLE</h3>
-        <h4>Mi Documento PDF</h4>
-        <a href="https://drive.google.com/file/d/1pQCU0M5RDPsFccfLDun0tjC3XmPe8HrT/preview" target="_blank">Haz clic aquí para ver o descargar el PDF</a>
-        
-        <br>
-        <iframe src="https://drive.google.com/file/d/1pQCU0M5RDPsFccfLDun0tjC3XmPe8HrT/preview" target="_blank"></iframe>
-        <br>
         <hr>
-        <iframe src="https://drive.google.com/file/d/1ChKSQ6Py0IJwjBxkukE3xkbx56xchb1z/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Video de funcionamiento</p>
 
-        <hr style="clear:both">
+        <section id="esp32">
+            <h2>Prácticas del ESP32</h2>
 
-        <h3 id="bleled">BLE_Led</h3>
-        <h4>Mi Documento PDF</h4>
-        <a href="https://drive.google.com/file/d/1jxay9Nh9JH-k5JIFNCdf_9so5DuNQX_T/preview" target="_blank">Haz clic aquí para ver o descargar el PDF</a>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1jxay9Nh9JH-k5JIFNCdf_9so5DuNQX_T/preview" target="_blank"></iframe>
-        <br>
+            <article id="blink">
+                <h3>Blink</h3>
+                <h4>Documento PDF: Práctica Blink</h4>
+                <iframe src="https://drive.google.com/file/d/1xWUjMKXwuxY41DxBX3tdZw0I_5iLhCwH/preview" title="PDF Práctica Blink"></iframe>
+                <p><a href="https://drive.google.com/file/d/1xWUjMKXwuxY41DxBX3tdZw0I_5iLhCwH/preview" target="_blank" rel="noopener noreferrer">Ver o descargar PDF: Práctica Blink</a></p>
+                <hr class="subsection-divider">
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/1MXyKxkF-lheDaUGrqHZFdjWQ4EQJC8hU/preview" allow="autoplay" title="Video de funcionamiento Práctica Blink"></iframe>
+                </div>
+                <p>Video de funcionamiento.</p>
+            </article>
+
+            <hr>
+
+            <article id="ble">
+                <h3>Transmisión de datos BLE</h3>
+                <h4>Documento PDF: Práctica Transmisión BLE</h4>
+                <iframe src="https://drive.google.com/file/d/1pQCU0M5RDPsFccfLDun0tjC3XmPe8HrT/preview" title="PDF Práctica Transmisión BLE"></iframe>
+                <p><a href="https://drive.google.com/file/d/1pQCU0M5RDPsFccfLDun0tjC3XmPe8HrT/preview" target="_blank" rel="noopener noreferrer">Ver o descargar PDF: Práctica Transmisión BLE</a></p>
+                <hr class="subsection-divider">
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/1ChKSQ6Py0IJwjBxkukE3xkbx56xchb1z/preview" allow="autoplay" title="Video de funcionamiento Práctica Transmisión BLE"></iframe>
+                </div>
+                <p>Video de funcionamiento.</p>
+            </article>
+
+            <hr>
+
+            <article id="bleled">
+                <h3>BLE_LED</h3>
+                <h4>Documento PDF: Práctica BLE_LED</h4>
+                <iframe src="https://drive.google.com/file/d/1jxay9Nh9JH-k5JIFNCdf_9so5DuNQX_T/preview" title="PDF Práctica BLE_LED"></iframe>
+                <p><a href="https://drive.google.com/file/d/1jxay9Nh9JH-k5JIFNCdf_9so5DuNQX_T/preview" target="_blank" rel="noopener noreferrer">Ver o descargar PDF: Práctica BLE_LED</a></p>
+                <hr class="subsection-divider">
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/1CkqMtj12_PGwQ0ldmZq5a_gWj-GuB_ai/preview" allow="autoplay" title="Video de funcionamiento Práctica BLE_LED"></iframe>
+                </div>
+                <p>Video de funcionamiento.</p>
+            </article>
+            
+            <hr>
+
+            <article id="bleledamp">
+                <h3>BLE ampliación</h3>
+                <h4>Documento PDF: Práctica BLE Ampliación</h4>
+                <iframe src="https://drive.google.com/file/d/1VwILf1Pr6FPVfzSIMva1Rk4wTR3PINd4/preview" title="PDF Práctica BLE Ampliación"></iframe>
+                <p><a href="https://drive.google.com/file/d/1VwILf1Pr6FPVfzSIMva1Rk4wTR3PINd4/preview" target="_blank" rel="noopener noreferrer">Ver o descargar PDF: Práctica BLE Ampliación</a></p>
+                <hr class="subsection-divider">
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/14L-98kFJh_jRGkUb5A3K2lpew00u9uiC/preview" allow="autoplay" title="Video de funcionamiento Práctica BLE Ampliación (Parte 1)"></iframe>
+                </div>
+                <p>Video de funcionamiento.</p>
+                
+                <!-- Este iframe parece más una imagen o captura que un video, si es así, debería ser <img> -->
+                <!-- Si es un video, envuélvelo en .video-responsive-container -->
+                <!-- <iframe src="https://drive.google.com/file/d/14ChEQcYNNgKN2Jds2EJeEKn8T72JKDMd/preview" allow="autoplay" title="Evidencia adicional BLE Ampliación"></iframe> -->
+                <p><strong>Actualización:</strong> Asumiendo que `14ChEQcYNNgKN2Jds2EJeEKn8T72JKDMd` es un video o una previsualización interactiva:</p>
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/14ChEQcYNNgKN2Jds2EJeEKn8T72JKDMd/preview" allow="autoplay" title="Evidencia adicional BLE Ampliación"></iframe>
+                </div>
+                <h4>Evidencias de la segunda parte de la práctica</h4>
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/14M27VmOoMEvGMbmCe29dnrVGjxHFG_l-/preview" allow="autoplay" title="Video de funcionamiento BLE Ampliación (Parte 2)"></iframe>
+                </div>
+                <p>Video de funcionamiento.</p>
+            </article>
+
+            <hr>
+            
+            <article id="apstation">
+                <h3>Modo AP + Station</h3>
+                <h4>Documento PDF: Práctica Modo AP + Station</h4>
+                <iframe src="https://drive.google.com/file/d/1r7h2tQIOLP-y8GlE_k0ENiEzZRpMWdCQ/preview" title="PDF Práctica Modo AP + Station"></iframe>
+                <p><a href="https://drive.google.com/file/d/1r7h2tQIOLP-y8GlE_k0ENiEzZRpMWdCQ/preview" target="_blank" rel="noopener noreferrer">Ver o descargar PDF: Práctica Modo AP + Station</a></p>
+                <hr class="subsection-divider">
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/1Ct8pSn9YaN4bdcpkUHVjudjQBI14xG5I/preview" allow="autoplay" title="Video de funcionamiento Práctica Modo AP + Station"></iframe>
+                </div>
+                <p>Video de funcionamiento.</p>
+                
+                <!-- Este iframe parece ser una imagen. Si es así, usa <img> -->
+                <!-- <iframe src="https://drive.google.com/file/d/1x_oXy4K2XngVItQfo-wKIuZs4VIAhOqE/preview" allow="autoplay" title="Imagen de WiFi - Modo AP + Station"></iframe> -->
+                <p><strong>Actualización:</strong> Si `1x_oXy4K2XngVItQfo-wKIuZs4VIAhOqE` es una imagen estática, reemplaza el iframe con:</p>
+                <img src="https://drive.google.com/uc?id=1x_oXy4K2XngVItQfo-wKIuZs4VIAhOqE" alt="Imagen de configuración WiFi para Modo AP + Station">
+                <!-- Nota: La URL para mostrar directamente una imagen de Google Drive es diferente (uc?id=FILE_ID) -->
+                <!-- Si es una previsualización interactiva, entonces el iframe está bien, pero sin .video-responsive-container si no es un video 16:9 -->
+                <p>Imagen de Wifi.</p>
+            </article>
+        </section>
+
         <hr>
-        <iframe src="https://drive.google.com/file/d/1CkqMtj12_PGwQ0ldmZq5a_gWj-GuB_ai/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Video de funcionamiento</p>
 
-        <hr style="clear:both">
+        <section id="esp32comunicacion">
+            <h2>Prácticas de comunicaciones entre ESP32</h2>
+            <p>
+                En esta sección se muestran códigos, imágenes y videos de las comunicaciones que hemos logrado conectando dos dispositivos ESP32-S3 utilizando varios métodos diferentes.
+            </p>
 
-        <h3 id="bleledamp">BLE ampliación</h3>
-        <h4>Mi Documento PDF</h4>
-        <a href="https://drive.google.com/file/d/1VwILf1Pr6FPVfzSIMva1Rk4wTR3PINd4/preview" target="_blank">Haz clic aquí para ver o descargar el PDF</a>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1VwILf1Pr6FPVfzSIMva1Rk4wTR3PINd4/preview" target="_blank"></iframe>
-        <br>
+            <article id="esp32UART">
+                <h3>Comunicación UART entre Placas ESP32-S3</h3>
+                <h4>Documento PDF: Práctica Comunicación UART</h4>
+                <iframe src="https://drive.google.com/file/d/1qxpM5ei7rD2fzI9xnvELtopmR-iXS-D4/preview" title="PDF Práctica Comunicación UART"></iframe>
+                <p><a href="https://drive.google.com/file/d/1qxpM5ei7rD2fzI9xnvELtopmR-iXS-D4/preview" target="_blank" rel="noopener noreferrer">Ver o descargar PDF: Práctica Comunicación UART</a></p>
+                <hr class="subsection-divider">
+                <h5>Evidencias del primer proyecto de la práctica</h5>
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/14SysGFByDcM2DZAwJi5aorSGlOejlMXT/preview" allow="autoplay" title="Video Funcionamiento UART - Proyecto 1"></iframe>
+                </div>
+                <p>Video de funcionamiento.</p>
+                <!-- Asumiendo que el siguiente es una imagen -->
+                <img src="https://drive.google.com/uc?id=1aiDNsHvYxDgX3BgNFPzjqqxF6z1eBMmD" alt="Imagen de funcionamiento UART - Proyecto 1">
+                <p>Imagen de funcionamiento.</p>
+                
+                <h5>Evidencias del segundo proyecto de la práctica</h5>
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/14_3DOKTHm88PIEoDuj-NutR3wPu_WhPE/preview" allow="autoplay" title="Video Funcionamiento UART - Proyecto 2"></iframe>
+                </div>
+                <p>Video de funcionamiento.</p>
+                <!-- Asumiendo que el siguiente es una imagen -->
+                <img src="https://drive.google.com/uc?id=1d0pq-fS3fadq7vPBnUAW-hxBG_yl63ZR" alt="Imagen de funcionamiento UART - Proyecto 2">
+                <p>Imagen de funcionamiento.</p>
+            </article>
+
+            <hr>
+
+            <article id="esp32RS485">
+                <h3>Comunicación ESP32-S3 mediante RS485 con Control Automático (HW-519P4)</h3>
+                <h4>Documento PDF: Práctica Comunicación RS485</h4>
+                <iframe src="https://drive.google.com/file/d/1dAXmeDhbpQylj6-xgv-udIWgBLqoa3a5/preview" title="PDF Práctica Comunicación RS485"></iframe>
+                <p><a href="https://drive.google.com/file/d/1dAXmeDhbpQylj6-xgv-udIWgBLqoa3a5/preview" target="_blank" rel="noopener noreferrer">Ver o descargar PDF: Práctica Comunicación RS485</a></p>
+                <hr class="subsection-divider">
+                <h5>Evidencias del primer proyecto de la práctica</h5>
+                 <!-- Asumiendo que los siguientes son videos -->
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/13sY9C996RxJskak_WkrdknMVSKPePgJC/preview" allow="autoplay" title="Video Funcionamiento RS485 - Proyecto 1"></iframe>
+                </div>
+                <p>Video de funcionamiento.</p>
+                <!-- Asumiendo que el siguiente es una imagen -->
+                <img src="https://drive.google.com/uc?id=13vpov-o-n9QHYCFcDENhoIhQhZ9JOfFS" alt="Imagen de funcionamiento RS485 - Proyecto 1">
+                <p>Imagen de funcionamiento.</p>
+                
+                <h5>Evidencias del segundo proyecto de la práctica</h5>
+                <div class="video-responsive-container">
+                     <iframe src="https://drive.google.com/file/d/13yUty1CdK9ulp7SOYwOJAWNDEIoI53lQ/preview" allow="autoplay" title="Video Funcionamiento RS485 - Proyecto 2"></iframe>
+                </div>
+                <p>Video de funcionamiento.</p>
+                <!-- Asumiendo que el siguiente es una imagen -->
+                <img src="https://drive.google.com/uc?id=13xpa8uvvEx20AMk68VIpt3UM3UB5uGaW" alt="Imagen de funcionamiento RS485 - Proyecto 2">
+                <p>Imagen de funcionamiento.</p>
+            </article>
+
+            <hr>
+
+            <article id="esp32CAN">
+                <h3>Comunicación ESP32-S3 mediante CAN</h3>
+                <h4>Documento PDF: Práctica Comunicación CAN</h4>
+                <iframe src="https://drive.google.com/file/d/1Eld50wbp27tG1S7hfBjKrgeWsY-WqT-S/preview" title="PDF Práctica Comunicación CAN"></iframe>
+                <p><a href="https://drive.google.com/file/d/1Eld50wbp27tG1S7hfBjKrgeWsY-WqT-S/preview" target="_blank" rel="noopener noreferrer">Ver o descargar PDF: Práctica Comunicación CAN</a></p>
+                <hr class="subsection-divider">
+                <h5>Evidencias proyecto</h5>
+                <!-- Asumiendo que los siguientes son imágenes -->
+                <img src="https://drive.google.com/uc?id=1PPFhBMq9duoVJx2-LBsa142EFTTnC7BK" alt="Imagen de funcionamiento CAN 1">
+                <img src="https://drive.google.com/uc?id=1Qcs7wTD-y4VIp55-n5hEWqvX4fZbZpcB" alt="Imagen de funcionamiento CAN 2">
+                <p>Imágenes de funcionamiento.</p>
+            </article>
+        </section>
+
         <hr>
-        <iframe src="https://drive.google.com/file/d/14L-98kFJh_jRGkUb5A3K2lpew00u9uiC/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Video de funcionamiento</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/14ChEQcYNNgKN2Jds2EJeEKn8T72JKDMd/preview" width="640" height="360" allow="autoplay"></iframe>
-        <br>
-        <h4>Evidencias de la segunda parte de la práctica</h4>
-        <iframe src="https://drive.google.com/file/d/14M27VmOoMEvGMbmCe29dnrVGjxHFG_l-/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Video de funcionamiento</p>
 
-        <hr style="clear:both">
-        
-        <h3 id="apstation">Modo Ap + Station</h3>
-        <h4>Mi Documento PDF</h4>
-        <a href="https://drive.google.com/file/d/1r7h2tQIOLP-y8GlE_k0ENiEzZRpMWdCQ/preview" target="_blank">Haz clic aquí para ver o descargar el PDF</a>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1r7h2tQIOLP-y8GlE_k0ENiEzZRpMWdCQ/preview" target="_blank"></iframe>
-        <br>
-        <hr>
-        <iframe src="https://drive.google.com/file/d/1Ct8pSn9YaN4bdcpkUHVjudjQBI14xG5I/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Video de funcionamiento</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1x_oXy4K2XngVItQfo-wKIuZs4VIAhOqE/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Imágen de Wifi</p>
+        <section id="coche">
+            <h2>Proyecto final de la asignatura</h2>
+            <article> <!-- Envolver contenido del proyecto en article -->
+                <h3>Control Avanzado de Coche RC con ESP32-S3, BLE, MQTT y Almacenamiento de Datos</h3>
+                <h4>Documento PDF: Proyecto Final Coche RC</h4>
+                <!-- El ID del archivo es el mismo que el de la práctica CAN, ¿es correcto? Si no, actualiza el ID. -->
+                <iframe src="https://drive.google.com/file/d/1Eld50wbp27tG1S7hfBjKrgeWsY-WqT-S/preview" title="PDF Proyecto Final Coche RC"></iframe>
+                <p><a href="https://drive.google.com/file/d/1Eld50wbp27tG1S7hfBjKrgeWsY-WqT-S/preview" target="_blank" rel="noopener noreferrer">Ver o descargar PDF: Proyecto Final Coche RC</a></p>
+                <hr class="subsection-divider">
+                <h5>Evidencias proyecto</h5>
+                <!-- Asumiendo que los siguientes son imágenes -->
+                <img src="https://drive.google.com/uc?id=12TeEPbD7duCJstNKPRa9MnoyccOKqlXn" alt="Imagen del terminal corriendo Mosquitto">
+                <p>Imagen del terminal corriendo Mosquitto.</p>
+                
+                <img src="https://drive.google.com/uc?id=1lgzROkUZurfO5TfTmUzJKgg97O2uLfUk" alt="Fotografía del chasis del coche RC con ESP32-S3 y componentes">
+                <p>Fotografía del chasis del coche con el ESP32-S3, motor paso a paso, servomotor, buzzer, led...</p>
+                
+                <img src="https://drive.google.com/uc?id=1PMvoFE8DvCOUR9kawu5b3wofawwGXKjt" alt="Consola mostrando análisis de datos de comandos del coche">
+                <p>Fotografía de la consola que muestra el resultado del análisis de datos.</p>
+                
+                <img src="https://drive.google.com/uc?id=1fk1t6sXX1tfQXjNpWS54so1gjhmvhTc2" alt="Aplicación Light Blue conectada al dispositivo CocheStepperS3_MQTT">
+                <p>La imagen muestra la aplicación Light Blue conectada al dispositivo.</p>
+                
+                <img src="https://drive.google.com/uc?id=1WLS8oEmA-Rxdguk5fBNSQqh0LTK7TDbM" alt="MQTT Explorer mostrando mensajes JSON del ESP32">
+                <p>La imagen muestra a MQTT Explorer conectado al broker local.</p>
+                
+                <img src="https://drive.google.com/uc?id=185jq1m9g5aooiPcyHgP26-YmAkT7mEym" alt="Monitor Serie mostrando mensajes de conexión y comandos">
+                <p>La imagen muestra el Monitor Serie.</p>
+                
+                <!-- Asumiendo que los siguientes son videos -->
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/1ijq0MB81h_y1CRYi1YdzsRXV01awoDNm/preview" allow="autoplay" title="Video funcionamiento coche RC 1"></iframe>
+                </div>
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/1igGgmppRJlxvFyXpHSLlazuKcW8uH6Yl/preview" allow="autoplay" title="Video funcionamiento coche RC 2"></iframe>
+                </div>
+                <div class="video-responsive-container">
+                    <iframe src="https://drive.google.com/file/d/1irS2ry8eXqzAooUO5bF8por1dFJd4MQ8/preview" allow="autoplay" title="Video funcionamiento coche RC 3"></iframe>
+                </div>
+                <p>Videos de funcionamiento del coche.</p>
+            </article>
+        </section>
+    </main>
 
-        <hr style="clear:both">
+    <hr>
 
-        <h2 id="esp32comunicacion">Prácticas de conexiones mediante ESP32</h2>
-        <p>
-            En esta sección se muestran códigos, imagenes y videos de las comunicaciones que hemos logrado conectando dos dispositivos ESP32S3 utilizando varios métodos diferentes.
-        </p>
-        <br>
-        <h3 id="esp32UART">Comunicación UART entre Placas ESP32-S3</h3>
-
-        <h4>Mi Documento PDF</h4>
-        
-        <a href="https://drive.google.com/file/d/1qxpM5ei7rD2fzI9xnvELtopmR-iXS-D4/preview" target="_blank">Haz clic aquí para ver o descargar el PDF</a>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1qxpM5ei7rD2fzI9xnvELtopmR-iXS-D4/preview" target="_blank"></iframe>
-        <br>
-        <hr>
-        <h5>Evidencias del primer proyecto de la práctica</h5>
-        <iframe src="https://drive.google.com/file/d/14SysGFByDcM2DZAwJi5aorSGlOejlMXT/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Video de funcionamiento</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1aiDNsHvYxDgX3BgNFPzjqqxF6z1eBMmD/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Imágen de funcionamiento</p>
-        <br>
-        <br>
-        <h5>Evidencias del segundo proyecto de la práctica</h5>
-        <iframe src="https://drive.google.com/file/d/14_3DOKTHm88PIEoDuj-NutR3wPu_WhPE/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Video de funcionamiento</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1d0pq-fS3fadq7vPBnUAW-hxBG_yl63ZR/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Imágen de funcionamiento</p>
-        <hr style="clear:both">
-
-        <h3 id="esp32RS485">Comunicación ESP32-S3 mediante RS485 con Control Automático (HW-519P4)</h3>
-
-        <h4>Mi Documento PDF</h4>
-        
-        <a href="https://drive.google.com/file/d/1dAXmeDhbpQylj6-xgv-udIWgBLqoa3a5/preview" target="_blank">Haz clic aquí para ver o descargar el PDF</a>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1dAXmeDhbpQylj6-xgv-udIWgBLqoa3a5/preview" target="_blank"></iframe>
-        <br>
-        <hr>
-        <h5>Evidencias del primer proyecto de la práctica</h5>
-        <iframe src="https://drive.google.com/file/d/13sY9C996RxJskak_WkrdknMVSKPePgJC/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Video de funcionamiento</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/13vpov-o-n9QHYCFcDENhoIhQhZ9JOfFS/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Imágen de funcionamiento</p>
-        <br>
-        <br>
-        <h5>Evidencias del segundo proyecto de la práctica</h5>
-        <iframe src="https://drive.google.com/file/d/13yUty1CdK9ulp7SOYwOJAWNDEIoI53lQ/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Video de funcionamiento</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/13xpa8uvvEx20AMk68VIpt3UM3UB5uGaW/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Imágen de funcionamiento</p>
-        <hr style="clear:both">
-
-        <h3 id="esp32CAN">Comunicación ESP32-S3 mediante CAN</h3>
-
-        <h4>Mi Documento PDF</h4>
-        
-        <a href="https://drive.google.com/file/d/1Eld50wbp27tG1S7hfBjKrgeWsY-WqT-S/preview" target="_blank">Haz clic aquí para ver o descargar el PDF</a>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1Eld50wbp27tG1S7hfBjKrgeWsY-WqT-S/preview" target="_blank"></iframe>
-        <br>
-        <hr>
-        <h5>Evidencias proyecto</h5>
-        <iframe src="https://drive.google.com/file/d/1PPFhBMq9duoVJx2-LBsa142EFTTnC7BK/preview" width="640" height="360" allow="autoplay"></iframe>
-        <iframe src="https://drive.google.com/file/d/1Qcs7wTD-y4VIp55-n5hEWqvX4fZbZpcB/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Imágenes de funcionamiento</p>
-        <br>
-        <hr style="clear:both">
-
-        <h2 id="coche">Proyecto final de la asignatura</h2>
-        <h3>Control Avanzado de Coche RC con ESP32-S3, BLE, MQTT y Almacenamiento de Datos</h3>
-        <h4>Mi Documento PDF</h4>
-        
-        <a href="https://drive.google.com/file/d/1Eld50wbp27tG1S7hfBjKrgeWsY-WqT-S/preview" target="_blank">Haz clic aquí para ver o descargar el PDF</a>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1Eld50wbp27tG1S7hfBjKrgeWsY-WqT-S/preview" target="_blank"></iframe>
-        <br>
-        <hr>
-        <h5>Evidencias proyecto</h5>
-        <iframe src="https://drive.google.com/file/d/12TeEPbD7duCJstNKPRa9MnoyccOKqlXn/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Imagen del terminal corriendo mosquitto</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1lgzROkUZurfO5TfTmUzJKgg97O2uLfUk/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Fotografía del chasis del coche con el ESP32-S3, motor paso a paso, servomotor, buzzer, led...</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1PMvoFE8DvCOUR9kawu5b3wofawwGXKjt/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>Fotografía de la consola que muestra el resultado del análisis de datos, incluyendo el número total de comandos, la frecuencia de cada uno y el comando más utilizado</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1fk1t6sXX1tfQXjNpWS54so1gjhmvhTc2/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>La imagen muestra la aplicación Light Blue conectada al dispositivo "CocheStepperS3_MQTT" y la interfaz para escribir valores en la característica RX.</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1WLS8oEmA-Rxdguk5fBNSQqh0LTK7TDbM/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>La imagen muestra a MQTT Explorer conectado al broker local mostrando los mensajes JSON publicados por el ESP32 en el topic especificado.</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/185jq1m9g5aooiPcyHgP26-YmAkT7mEym/preview" width="640" height="360" allow="autoplay"></iframe>
-        <p>La imagen muestra el Monitor Serie que presenta mensajes de conexión a Wi-Fi, al broker MQTT, la recepción de un comando BLE (ej. 'F') y la publicación del mensaje JSON correspondiente a MQTT</p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1ijq0MB81h_y1CRYi1YdzsRXV01awoDNm/preview" width="640" height="360" allow="autoplay"></iframe>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1igGgmppRJlxvFyXpHSLlazuKcW8uH6Yl/preview" width="640" height="360" allow="autoplay"></iframe>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1irS2ry8eXqzAooUO5bF8por1dFJd4MQ8/preview" width="640" height="360" allow="autoplay"></iframe>
-        <br>
-        <p>Videos de funcionamiento del coche.</p>
-        <br>
-        <hr style="clear:both">
-    </section>
     <footer>
-        <a href="#título">Ir al inicio</a>
-        <br>
-        <a href="mailto:pardoperezlucia@gmail.com">Contacto</a>
+        <p><a href="#título">Ir al inicio</a></p>
+        <p><a href="mailto:pardoperezlucia@gmail.com">Contacto: pardoperezlucia@gmail.com</a></p>
+        <p>© 2023 Lucía Pardo Pérez. Todos los derechos reservados.</p> <!-- Añadir un copyright -->
     </footer>
 </body>
 </html>
